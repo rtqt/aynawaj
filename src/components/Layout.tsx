@@ -33,11 +33,11 @@ const Layout: React.FC = () => {
             {/* Dynamic Theme Injection */}
             <style>{`
         :root {
-          --background: 1, 38, 28;
-          --foreground: 255, 255, 255;
-          --primary: 212, 175, 55;
-          --primary-foreground: 1, 38, 28;
-          --border: 212, 175, 55, 0.2;
+          --background: #01261C;
+          --foreground: #ffffff;
+          --primary: #D4AF37;
+          --primary-foreground: #01261C;
+          --border: rgba(212, 175, 55, 0.2);
         }
         body {
           background-color: #01261C;
