@@ -139,12 +139,21 @@ const CartSidebar: React.FC = () => {
                                     <span className="text-gray-400 font-bold uppercase tracking-widest">Total</span>
                                     <span className="text-2xl font-black text-white">{totalPrice.toLocaleString()} ETB</span>
                                 </div>
-                                <button
-                                    onClick={handleTelegramCheckout}
-                                    className="w-full flex items-center justify-center gap-3 bg-primary text-[#01261C] py-4 rounded-xl font-black uppercase tracking-widest shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-white hover:text-[#01261C] hover:scale-[1.02] transition-all duration-300"
-                                >
-                                    <Send size={20} /> Checkout via Telegram
-                                </button>
+                                <div className="flex items-center gap-3">
+                                    <button
+                                        onClick={() => setIsCartOpen(false)}
+                                        className="flex items-center justify-center p-4 bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300"
+                                        aria-label="Go back"
+                                    >
+                                        <ArrowLeft size={20} />
+                                    </button>
+                                    <button
+                                        onClick={handleTelegramCheckout}
+                                        className="flex-1 flex items-center justify-center gap-3 bg-primary text-[#01261C] py-4 rounded-xl font-black uppercase tracking-widest shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-white hover:text-[#01261C] hover:scale-[1.02] transition-all duration-300"
+                                    >
+                                        <Send size={20} /> Checkout via Telegram
+                                    </button>
+                                </div>
                             </div>
                         )}
                     </motion.div>
