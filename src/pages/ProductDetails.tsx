@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useProducts } from '../hooks/useProducts';
 import { ArrowLeft, ShoppingBag } from 'lucide-react';
@@ -11,6 +11,12 @@ const ProductDetails: React.FC = () => {
     const { products, isLoading } = useProducts();
 
     const product = products.find(p => p.id === id);
+
+    // Scroll to top when the product ID changes (e.g. navigating to this page)
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [id]);
+
     const [activeImage, setActiveImage] = useState(0);
     const [selectedSize, setSelectedSize] = useState<string>('');
     const { addToCart } = useCart();
