@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aynawaj.com/sitemap.xml
+Sitemap: https://aynawaj.Vercel.app/sitemap.xml
