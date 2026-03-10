@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import LanguageSelector from './LanguageSelector';
 import { useCart } from '../hooks/useCart';
 
-const LOGO_URL = "https://storage.googleapis.com/dala-prod-public-storage/attachments/a33a3253-224b-46e3-8cf8-f3927c66f828/1772967550667_20251016_161737.jpg";
+const LOGO_URL = "/photo_2025-12-13_13-08-19.jpg";
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();

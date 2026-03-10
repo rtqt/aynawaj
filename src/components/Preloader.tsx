@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-const LOGO_URL = "https://storage.googleapis.com/dala-prod-public-storage/attachments/a33a3253-224b-46e3-8cf8-f3927c66f828/1772967550667_20251016_161737.jpg";
+// URL for the single sneaker image that will display while loading
+const LOGO_URL = "/photo_2025-12-13_13-08-19.jpg";
 
 const Preloader: React.FC = () => {
   const { t } = useTranslation();

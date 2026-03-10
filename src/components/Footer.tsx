@@ -1,10 +1,11 @@
-import React from 'react';
-import { Instagram, Twitter, Facebook, ArrowUpRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Instagram, Twitter, Facebook, ArrowUpRight, Send, MoveRight } from 'lucide-react';
 import { toast } from 'sonner';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-const LOGO_URL = "https://storage.googleapis.com/dala-prod-public-storage/attachments/a33a3253-224b-46e3-8cf8-f3927c66f828/1772967550667_20251016_161737.jpg";
+// Logo for footer
+const LOGO_URL = "/photo_2025-12-13_13-08-19.jpg";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
