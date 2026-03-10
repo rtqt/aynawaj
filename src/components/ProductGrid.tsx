@@ -30,7 +30,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ hideTitle = false }) => {
   }, [products, searchQuery, selectedBrand]);
 
   return (
-    <section className="py-24 bg-[#01261C]">
+    <section id="product-grid" className="py-24 bg-[#01261C]">
       <div className="container mx-auto px-6">
         {!hideTitle && (
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">

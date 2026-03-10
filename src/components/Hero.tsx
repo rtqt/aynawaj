@@ -64,7 +64,12 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-5">
             <button
-              onClick={() => toast.success(t('hero.toast_exploring'))}
+              onClick={() => {
+                const target = document.getElementById('product-grid');
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="group relative px-10 py-5 bg-[#D4AF37] text-[#01261C] rounded-2xl font-black shadow-[0_0_40px_rgba(212,175,55,0.4)] hover:shadow-[0_0_60px_rgba(212,175,55,0.6)] hover:bg-white overflow-hidden transition-all duration-300 w-full sm:w-auto"
             >
               <span className="relative z-10 flex items-center justify-center gap-3 uppercase tracking-widest">
