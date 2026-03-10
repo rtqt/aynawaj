@@ -53,12 +53,20 @@ const Admin: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const sizes = sizesInput.split(',').map(s => s.trim()).filter(s => s);
+        let sizes = sizesInput.split(',').map(s => s.trim()).filter(s => s);
 
         if (sizes.length === 0) {
-            toast.error("Please provide at least one size.");
-            return;
+            // Default sizes if empty
+            sizes = ['40', '41', '42', '43'];
         }
+
+        const finalDataDetails = {
+            ...formData,
+            origin: formData.origin?.trim() || 'made in vietnam',
+            quality: formData.quality?.trim() || 'High quality',
+            contactPhone: formData.contactPhone?.trim() || '0980233823',
+            telegramUsername: formData.telegramUsername?.trim() || '@Aynawaj1',
+        };
 
         if (imageFiles.length === 0 && existingImages.length === 0) {
             toast.error("Please provide at least one image.");
@@ -89,7 +97,7 @@ const Admin: React.FC = () => {
             }
 
             const finalImages = [...existingImages, ...uploadedUrls];
-            const finalData = { ...formData, sizes, images: finalImages } as Omit<Product, 'id' | 'createdAt'>;
+            const finalData = { ...finalDataDetails, sizes, images: finalImages } as Omit<Product, 'id' | 'createdAt'>;
             if (isEditing) {
                 await editProduct(isEditing, finalData);
                 toast.success("Product updated successfully!");
@@ -149,7 +157,6 @@ const Admin: React.FC = () => {
                                 <div>
                                     <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Origin</label>
                                     <input
-                                        required
                                         type="text"
                                         placeholder="e.g. made in vietnam"
                                         className="w-full bg-black/20 border border-white/10 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-primary transition-colors"
@@ -160,7 +167,6 @@ const Admin: React.FC = () => {
                                 <div>
                                     <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Quality</label>
                                     <input
-                                        required
                                         type="text"
                                         placeholder="e.g. High quality"
                                         className="w-full bg-black/20 border border-white/10 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-primary transition-colors"
@@ -172,7 +178,6 @@ const Admin: React.FC = () => {
                             <div>
                                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Sizes (Comma separated)</label>
                                 <input
-                                    required
                                     type="text"
                                     placeholder="e.g. 40, 41, 42, 43"
                                     className="w-full bg-black/20 border border-white/10 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-primary transition-colors"
@@ -198,7 +203,6 @@ const Admin: React.FC = () => {
                                 <div>
                                     <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Contact Phone</label>
                                     <input
-                                        required
                                         type="text"
                                         placeholder="e.g. 0980233823"
                                         className="w-full bg-black/20 border border-white/10 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-primary transition-colors"
@@ -209,7 +213,6 @@ const Admin: React.FC = () => {
                                 <div>
                                     <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Telegram Username</label>
                                     <input
-                                        required
                                         type="text"
                                         placeholder="e.g. @Aynawaj1"
                                         className="w-full bg-black/20 border border-white/10 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-primary transition-colors"
