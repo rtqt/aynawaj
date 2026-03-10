@@ -1,0 +1,84 @@
+{
+  "brand": {
+    "name": "AYNAWAJ",
+    "tagline": "SHOES"
+  },
+  "nav": {
+    "home": "Home",
+    "men": "Men",
+    "women": "Women",
+    "collections": "Collections",
+    "about": "About",
+    "search": "Search"
+  },
+  "hero": {
+    "badge": "Premium AYNAWAJ Quality",
+    "title_part1": "SPEED WITH",
+    "title_part2": "STYLE.",
+    "description": "AYNAWAJ SHOES - Where speed meets sophistication. Experience the ultimate performance footwear designed for those who never stop moving.",
+    "shop_now": "Shop Collection",
+    "our_vision": "Our Vision",
+    "original_design": "Original Design",
+    "premium_materials": "Premium Materials",
+    "infinity": "Infinity",
+    "limitless": "Limitless",
+    "elite": "AYNAWAJ ELITE",
+    "toast_exploring": "Exploring AYNAWAJ Collection..."
+  },
+  "heritage": {
+    "title_part1": "ROOTED IN",
+    "title_part2": "PERFECTION,",
+    "title_part3": "DRIVEN BY",
+    "title_part4": "SPEED.",
+    "description": "AYNAWAJ isn't just a shoe company; it's a statement of momentum. We take the essence of movement and encapsulate it in footwear that looks as fast as it feels.",
+    "features": {
+      "quality": {
+        "title": "Limitless Quality",
+        "desc": "Every AYNAWAJ shoe is a testament to our commitment to perfection and durability."
+      },
+      "global": {
+        "title": "Global Vision",
+        "desc": "Designed for international performance while maintaining our unique stylistic roots."
+      },
+      "speed": {
+        "title": "Speed Engineered",
+        "desc": "Our motion-line technology ensures maximum efficiency for every stride."
+      },
+      "promise": {
+        "title": "Infinity Promise",
+        "desc": "We stand by our products with an 'Infinity Symbol' promise of lasting value."
+      }
+    }
+  },
+  "products": {
+    "title": "LATEST DROPS",
+    "description": "Our newest collection combines elite performance with the unmistakable AYNAWAJ aesthetic.",
+    "explore_all": "Explore All",
+    "quick_add": "Quick Add",
+    "toast_added": "Added {{name}} to cart",
+    "categories": {
+      "runner": "Pro Runner",
+      "heritage": "Heritage",
+      "performance": "Performance",
+      "casual": "Casual"
+    },
+    "names": {
+      "velocity": "AYNAWAJ Velocity",
+      "golden": "Golden Path Boots",
+      "motion": "Motion Series X",
+      "urban": "Infinity Urban"
+    }
+  },
+  "footer": {
+    "brand_desc": "Leading the footwear revolution with authentic style, speed engineering, and a vision of infinity.",
+    "col_collection": "Collection",
+    "col_services": "Services",
+    "col_join": "Join the Circle",
+    "join_desc": "Experience the speed. Subscribe for exclusive drops and infinity insights.",
+    "email_placeholder": "Your email",
+    "toast_welcome": "Welcome to the AYNAWAJ Circle!",
+    "rights": "© {{year}} AYNAWAJ SHOES. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}
