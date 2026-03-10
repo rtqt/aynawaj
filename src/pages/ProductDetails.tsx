@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useProducts } from '../hooks/useProducts';
 import { ArrowLeft, ShoppingBag } from 'lucide-react';
 import { useCart } from '../hooks/useCart';
+import { toast } from 'sonner';
 
 const ProductDetails: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -98,7 +99,7 @@ const ProductDetails: React.FC = () => {
                         <button
                             onClick={() => {
                                 if (!selectedSize) {
-                                    alert('Please select a size first');
+                                    toast.error('Please select a size first');
                                     return;
                                 }
                                 addToCart(product, selectedSize);
