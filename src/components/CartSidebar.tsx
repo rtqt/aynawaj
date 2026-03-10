@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useCart } from '../hooks/useCart';
-import { X, Trash2, Send } from 'lucide-react';
+import { X, Trash2, Send, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const CartSidebar: React.FC = () => {
     const { items, removeFromCart, totalPrice, isCartOpen, setIsCartOpen } = useCart();
+
+    useEffect(() => {
+        const handlePopState = () => {
+            if (isCartOpen) {
+                setIsCartOpen(false);
+            }
+        };
+
+        if (isCartOpen) {
+            window.history.pushState({ cartOpen: true }, '');
+            window.addEventListener('popstate', handlePopState);
+        }
+
+        return () => {
+            window.removeEventListener('popstate', handlePopState);
+            if (isCartOpen && window.history.state?.cartOpen) {
+                window.history.back();
+            }
+        };
+    }, [isCartOpen, setIsCartOpen]);
 
     const handleTelegramCheckout = () => {
         if (items.length === 0) return;
@@ -50,10 +70,18 @@ const CartSidebar: React.FC = () => {
                     >
                         {/* Header */}
                         <div className="p-6 border-b border-white/10 flex items-center justify-between">
-                            <h2 className="text-2xl font-black text-white uppercase tracking-widest">Your Cart</h2>
+                            <div className="flex items-center gap-3">
+                                <button
+                                    onClick={() => setIsCartOpen(false)}
+                                    className="md:hidden p-2 -ml-2 text-gray-400 hover:text-white rounded-full hover:bg-white/5 transition-colors"
+                                >
+                                    <ArrowLeft size={24} />
+                                </button>
+                                <h2 className="text-2xl font-black text-white uppercase tracking-widest">Your Cart</h2>
+                            </div>
                             <button
                                 onClick={() => setIsCartOpen(false)}
-                                className="p-2 text-gray-400 hover:text-white rounded-full hover:bg-white/5 transition-colors"
+                                className="hidden md:block p-2 text-gray-400 hover:text-white rounded-full hover:bg-white/5 transition-colors"
                             >
                                 <X size={24} />
                             </button>
