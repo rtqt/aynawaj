@@ -17,7 +17,8 @@ i18n
         translation: amTranslations,
       },
     },
-    fallbackLng: 'en',
+    fallbackLng: 'am',
+    lng: localStorage.getItem('i18nextLng') || 'am',
     interpolation: {
       escapeValue: false,
     },
