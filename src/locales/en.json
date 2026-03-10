@@ -12,55 +12,55 @@
     "search": "Search"
   },
   "hero": {
-    "badge": "Premium AYNAWAJ Quality",
-    "title_part1": "SPEED WITH",
-    "title_part2": "STYLE.",
-    "description": "AYNAWAJ SHOES - Where speed meets sophistication. Experience the ultimate performance footwear designed for those who never stop moving.",
-    "shop_now": "Shop Collection",
-    "our_vision": "Our Vision",
+    "badge": "Limited Edition. Unlimited Potential.",
+    "title_part1": "BUILT FOR THE",
+    "title_part2": "CHASE.",
+    "description": "Stop blending in. AYNAWAJ delivers elite performance footwear engineered for those who demand the spotlight. Don't just arrive—make a statement.",
+    "shop_now": "Claim Your Pair",
+    "our_vision": "See The Difference",
     "original_design": "Original Design",
     "premium_materials": "Premium Materials",
     "infinity": "Infinity",
     "limitless": "Limitless",
     "elite": "AYNAWAJ ELITE",
-    "toast_exploring": "Exploring AYNAWAJ Collection..."
+    "toast_exploring": "Entering the AYNAWAJ Elite Experience..."
   },
   "heritage": {
-    "title_part1": "ROOTED IN",
-    "title_part2": "PERFECTION,",
-    "title_part3": "DRIVEN BY",
-    "title_part4": "SPEED.",
-    "description": "AYNAWAJ isn't just a shoe company; it's a statement of momentum. We take the essence of movement and encapsulate it in footwear that looks as fast as it feels.",
+    "title_part1": "ENGINEERED FOR",
+    "title_part2": "EXCELLENCE.",
+    "title_part3": "WORN BY",
+    "title_part4": "INNOVATORS.",
+    "description": "We didn't just design another shoe. We built a symbol of momentum for leaders and trendsetters. When you wear AYNAWAJ, you're not just walking—you're signaling that you've arrived.",
     "features": {
       "quality": {
-        "title": "Limitless Quality",
-        "desc": "Every AYNAWAJ shoe is a testament to our commitment to perfection and durability."
+        "title": "Uncompromising Quality",
+        "desc": "Every single AYNAWAJ stitch is a testament to our relentless pursuit of perfection."
       },
       "global": {
-        "title": "Global Vision",
-        "desc": "Designed for international performance while maintaining our unique stylistic roots."
+        "title": "Global Demand",
+        "desc": "Crafted for international performance. Respected worldwide by those who know."
       },
       "speed": {
-        "title": "Speed Engineered",
-        "desc": "Our motion-line technology ensures maximum efficiency for every stride."
+        "title": "Precision Motion",
+        "desc": "Our proprietary architecture ensures absolute efficiency and comfort for every stride."
       },
       "promise": {
-        "title": "Infinity Promise",
-        "desc": "We stand by our products with an 'Infinity Symbol' promise of lasting value."
+        "title": "The Circle Guarantee",
+        "desc": "An Infinity Symbol promise. We stand behind our footwear with elite after-care."
       }
     }
   },
   "products": {
-    "title": "LATEST DROPS",
-    "description": "Our newest collection combines elite performance with the unmistakable AYNAWAJ aesthetic.",
-    "explore_all": "Explore All",
-    "quick_add": "Quick Add",
-    "toast_added": "Added {{name}} to cart",
+    "title": "THE EXCLUSIVE ARCHIVE",
+    "description": "Limited releases crafted with uncompromising quality. Secure your size before they're gone.",
+    "explore_all": "View The Archive",
+    "quick_add": "Quick Secure",
+    "toast_added": "Secured your {{name}}",
     "categories": {
       "runner": "Pro Runner",
-      "heritage": "Heritage",
+      "heritage": "Archival",
       "performance": "Performance",
-      "casual": "Casual"
+      "casual": "Street Elite"
     },
     "names": {
       "velocity": "AYNAWAJ Velocity",
@@ -70,15 +70,15 @@
     }
   },
   "footer": {
-    "brand_desc": "Leading the footwear revolution with authentic style, speed engineering, and a vision of infinity.",
-    "col_collection": "Collection",
-    "col_services": "Services",
-    "col_join": "Join the Circle",
-    "join_desc": "Experience the speed. Subscribe for exclusive drops and infinity insights.",
-    "email_placeholder": "Your email",
-    "toast_welcome": "Welcome to the AYNAWAJ Circle!",
+    "brand_desc": "Engineered for pioneers. Join the few who move differently with authentic style and speed.",
+    "col_collection": "The Archive",
+    "col_services": "Client Services",
+    "col_join": "Enter The Inner Circle",
+    "join_desc": "Get exclusive first access to limited drops before they hit the streets. Join the Inner Circle today.",
+    "email_placeholder": "Enter your email",
+    "toast_welcome": "You are now part of the Inner Circle.",
     "rights": "© {{year}} AYNAWAJ SHOES. All rights reserved.",
-    "privacy": "Privacy",
-    "terms": "Terms"
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }
