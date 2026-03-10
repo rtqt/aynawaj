@@ -17,11 +17,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const nextImage = (e: React.MouseEvent) => {
+        e.preventDefault();
         e.stopPropagation();
         setCurrentImage((prev) => (prev + 1) % product.images.length);
     };
 
     const prevImage = (e: React.MouseEvent) => {
+        e.preventDefault();
         e.stopPropagation();
         setCurrentImage((prev) => (prev - 1 + product.images.length) % product.images.length);
     };
