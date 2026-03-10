@@ -33,9 +33,22 @@ const Footer: React.FC = () => {
               {t('footer.brand_desc')}
             </p>
             <div className="flex gap-4">
-              {[Instagram, Twitter, Facebook].map((Icon, idx) => (
-                <a key={idx} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#D4AF37] hover:text-[#01261C] transition-all text-white">
-                  <Icon size={18} />
+              {[
+                {
+                  icon: <Instagram size={18} />,
+                  href: "https://www.instagram.com/aynawaj_/"
+                },
+                {
+                  icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" /></svg>,
+                  href: "https://www.tiktok.com/@aynawaj"
+                },
+                {
+                  icon: <Send size={18} strokeWidth={2.5} className="mr-0.5" />,
+                  href: "https://t.me/aynawajshoes"
+                }
+              ].map((social, idx) => (
+                <a key={idx} href={social.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#D4AF37] hover:text-[#01261C] transition-all text-white">
+                  {social.icon}
                 </a>
               ))}
             </div>
