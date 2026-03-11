@@ -137,7 +137,7 @@ const Hero: React.FC = () => {
                 transition={{ delay: 1 }}
                 className="text-white/80 text-sm font-bold uppercase tracking-widest mb-1"
               >
-                Signature Collection
+                New Arrivals
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, x: -20 }}
@@ -145,7 +145,7 @@ const Hero: React.FC = () => {
                 transition={{ delay: 1.2 }}
                 className="text-2xl font-black text-white"
               >
-                THE A-SERIES
+                NEW THIS WEEK
               </motion.p>
             </div>
           </motion.div>

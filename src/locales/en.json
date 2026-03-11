@@ -12,55 +12,55 @@
     "search": "Search"
   },
   "hero": {
-    "badge": "Limited Edition. Unlimited Potential.",
-    "title_part1": "BUILT FOR THE",
-    "title_part2": "CHASE.",
-    "description": "Stop blending in. AYNAWAJ delivers elite performance footwear engineered for those who demand the spotlight. Don't just arrive—make a statement.",
-    "shop_now": "Claim Your Pair",
-    "our_vision": "See The Difference",
-    "original_design": "Original Design",
-    "premium_materials": "Premium Materials",
+    "badge": "New drops weekly — grab yours before they sell out.",
+    "title_part1": "SHOES THAT MAKE",
+    "title_part2": "PEOPLE LOOK.",
+    "description": "AYNAWAJ brings handpicked, high-quality footwear directly to you — no middlemen, no markups. Every pair is inspected before it ships. Your next favorite shoe is already here.",
+    "shop_now": "Shop Now",
+    "our_vision": "Our Story",
+    "original_design": "In-House Designs",
+    "premium_materials": "Inspected Materials",
     "infinity": "Infinity",
     "limitless": "Limitless",
     "elite": "AYNAWAJ ELITE",
     "toast_exploring": "Entering the AYNAWAJ Elite Experience..."
   },
   "heritage": {
-    "title_part1": "ENGINEERED FOR",
-    "title_part2": "EXCELLENCE.",
-    "title_part3": "WORN BY",
-    "title_part4": "INNOVATORS.",
-    "description": "We didn't just design another shoe. We built a symbol of momentum for leaders and trendsetters. When you wear AYNAWAJ, you're not just walking—you're signaling that you've arrived.",
+    "title_part1": "QUALITY YOU CAN",
+    "title_part2": "ACTUALLY FEEL.",
+    "title_part3": "WORN BY PEOPLE WHO",
+    "title_part4": "NOTICE THE DIFFERENCE.",
+    "description": "We started on Telegram selling shoes we genuinely stood behind. Every pair we list has been checked — stitching, sole, fit, finish. If it's on AYNAWAJ, it passed.",
     "features": {
       "quality": {
-        "title": "Uncompromising Quality",
-        "desc": "Every single AYNAWAJ stitch is a testament to our relentless pursuit of perfection."
+        "title": "Every Pair Inspected",
+        "desc": "We check stitching, sole adhesion, and finish on every pair before listing it. If it doesn't pass, it doesn't ship."
       },
       "global": {
-        "title": "Global Demand",
-        "desc": "Crafted for international performance. Respected worldwide by those who know."
+        "title": "Sourced Worldwide",
+        "desc": "We source from Vietnam, Turkey, and China — choosing factories based on output quality, not lowest price."
       },
       "speed": {
-        "title": "Precision Motion",
-        "desc": "Our proprietary architecture ensures absolute efficiency and comfort for every stride."
+        "title": "Fast Delivery",
+        "desc": "Orders placed before 3pm ship same day. You'll get a tracking link the moment your pair leaves."
       },
       "promise": {
-        "title": "The Circle Guarantee",
-        "desc": "An Infinity Symbol promise. We stand behind our footwear with elite after-care."
+        "title": "Our Guarantee",
+        "desc": "Not happy with your order? Contact us within 7 days and we'll make it right — exchange or full refund."
       }
     }
   },
   "products": {
-    "title": "THE EXCLUSIVE ARCHIVE",
-    "description": "Limited releases crafted with uncompromising quality. Secure your size before they're gone.",
-    "explore_all": "View The Archive",
-    "quick_add": "Quick Secure",
-    "toast_added": "Secured your {{name}}",
+    "title": "WHAT'S IN STOCK",
+    "description": "Stock is limited and moves fast. Find your size, lock it in.",
+    "explore_all": "See All Shoes",
+    "quick_add": "Add to Cart",
+    "toast_added": "Added {{name}} to your cart",
     "categories": {
-      "runner": "Pro Runner",
-      "heritage": "Archival",
+      "runner": "Runners",
+      "heritage": "Classics",
       "performance": "Performance",
-      "casual": "Street Elite"
+      "casual": "Casual"
     },
     "names": {
       "velocity": "AYNAWAJ Velocity",
@@ -70,13 +70,13 @@
     }
   },
   "footer": {
-    "brand_desc": "Engineered for pioneers. Join the few who move differently with authentic style and speed.",
-    "col_collection": "The Archive",
-    "col_services": "Client Services",
-    "col_join": "Enter The Inner Circle",
-    "join_desc": "Get exclusive first access to limited drops before they hit the streets. Join the Inner Circle today.",
-    "email_placeholder": "Enter your email",
-    "toast_welcome": "You are now part of the Inner Circle.",
+    "brand_desc": "Handpicked shoes, inspected before they ship. Based in Ethiopia, delivering nationwide.",
+    "col_collection": "Shop",
+    "col_services": "Help",
+    "col_join": "Stay in the Loop",
+    "join_desc": "New stock drops weekly. Leave your email and we'll tell you first — before it sells out.",
+    "email_placeholder": "Your email address",
+    "toast_welcome": "You're in. We'll ping you when new stock drops.",
     "rights": "© {{year}} AYNAWAJ SHOES. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
