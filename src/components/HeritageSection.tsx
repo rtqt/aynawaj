@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Zap, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import heritageImg from '../assets/ChatGPT Image Mar 11, 2026, 04_16_51 PM.png';
+import heritageVideo from '../assets/The_Precision_Beam_version_1.mp4';
 
 const HeritageSection: React.FC = () => {
   const { t } = useTranslation();
@@ -71,9 +71,12 @@ const HeritageSection: React.FC = () => {
             className="relative"
           >
             <div className="relative z-10 rounded-[4rem] overflow-hidden aspect-square border-[12px] border-white/5 shadow-2xl">
-              <img 
-                src={heritageImg}
-                alt="AYNAWAJ Shoes"
+              <video
+                src={heritageVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full h-full object-cover"
               />
             </div>
