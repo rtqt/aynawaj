@@ -43,10 +43,6 @@
       "speed": {
         "title": "Fast Delivery",
         "desc": "Orders placed before 3pm ship same day. You'll get a tracking link the moment your pair leaves."
-      },
-      "promise": {
-        "title": "Our Guarantee",
-        "desc": "Not happy with your order? Contact us within 7 days and we'll make it right — exchange or full refund."
       }
     }
   },

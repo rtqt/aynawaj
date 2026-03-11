@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Zap, HeartHandshake, Globe } from 'lucide-react';
+import { ShieldCheck, Zap, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import heritageImg from '../assets/ChatGPT Image Mar 11, 2026, 04_16_51 PM.png';
 
 const HeritageSection: React.FC = () => {
   const { t } = useTranslation();
@@ -21,11 +22,6 @@ const HeritageSection: React.FC = () => {
       icon: <Zap className="text-[#D4AF37]" />,
       title: t('heritage.features.speed.title'),
       desc: t('heritage.features.speed.desc')
-    },
-    {
-      icon: <HeartHandshake className="text-[#D4AF37]" />,
-      title: t('heritage.features.promise.title'),
-      desc: t('heritage.features.promise.desc')
     }
   ];
 
@@ -76,8 +72,8 @@ const HeritageSection: React.FC = () => {
           >
             <div className="relative z-10 rounded-[4rem] overflow-hidden aspect-square border-[12px] border-white/5 shadow-2xl">
               <img 
-                src="https://storage.googleapis.com/dala-prod-public-storage/generated-images/f6d0def7-fb25-42be-bef2-a9d57a534885/ethiopian-lifestyle-urban-3f0d263c-1772967337155.webp" 
-                alt="AYNAWAJ Heritage"
+                src={heritageImg}
+                alt="AYNAWAJ Shoes"
                 className="w-full h-full object-cover"
               />
             </div>

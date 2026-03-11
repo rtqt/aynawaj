@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Package, Clock, RefreshCw, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Package, Clock, ArrowRight } from 'lucide-react';
 
 const About: React.FC = () => {
     return (
@@ -27,7 +27,6 @@ const About: React.FC = () => {
                         { icon: <ShieldCheck className="text-primary" size={22} />, title: "Stitching & Construction", desc: "We inspect seams and sole adhesion on every pair. If it looks like it'll come apart in a month, it doesn't make the list." },
                         { icon: <Package className="text-primary" size={22} />, title: "Finish & Materials", desc: "We check material quality, colorways, and how it holds up to handling. Cheap-looking materials get cut before listing." },
                         { icon: <Clock className="text-primary" size={22} />, title: "Sizing Accuracy", desc: "We only list sizes we can actually verify. No guessing. If there's a sizing quirk, we note it." },
-                        { icon: <RefreshCw className="text-primary" size={22} />, title: "Your Guarantee", desc: "Not happy with your order? Contact us within 7 days. We'll do a full exchange or refund — no runaround." }
                     ].map((item, i) => (
                         <div key={i} className="flex gap-4">
                             <div className="mt-1 flex-shrink-0 w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center">
