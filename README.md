@@ -1,86 +1,10 @@
-Overview
-Aynawaj Shoes is a bilingual (Amharic/English) e-commerce web application targeting the Ethiopian footwear market. The platform enables users to browse curated shoe collections, add items to a shopping cart, and complete purchases through a Telegram-based checkout system instead of traditional payment processing. index.html:14-19
+👟 Aynawaj Shoes (አይናዋጅ ጫማዎች)Aynawaj Shoes is a premium, bilingual e-commerce experience tailored specifically for the Ethiopian footwear market. By bridging the gap between modern web browsing and local commerce habits, Aynawaj offers a seamless journey from discovery to a personalized Telegram-based checkout.Explore the Live Store✨ Key Features🇪🇹 Bilingual by Design – Full native support for Amharic and English, ensuring accessibility for all users with persistent language detection.📱 Mobile-First PWA – Optimized for mobile networks in Ethiopia; installable as a Progressive Web App for a native-like experience.✈️ Telegram Checkout – Skip the complex payment forms. Orders are formatted and sent directly to the seller via Telegram for manual fulfillment.⚡ High-Performance Catalog – Instant brand filtering, size availability checks, and smooth animations powered by Framer Motion.🛠️ Robust Admin Suite – Integrated Supabase storage for effortless product management and image uploads.🛠️ The Tech StackLayerTechnologyFrontendReact 18 + TypeScriptStylingTailwind CSS + Framer MotionStateCustom Hooks (useProducts, useCart)StorageSupabase (Images) + LocalStorage (Cart)I18ni18next (Amharic/English)DeploymentVercel🚀 Getting StartedAynawaj is optimized for Bun, providing lightning-fast installation and build times.1. InstallationBash# Clone the repository
+git clone https://github.com/your-username/aynawaj-shoes.git
 
-Features
-Bilingual Support: Full Amharic and English language support with language detection and persistence en.json:1-80 am.json:1-80
-Product Catalog: Browse and search shoes with brand filtering and size availability display ProductGrid.tsx:23-30
-Shopping Cart: Add items to cart with size selection and localStorage persistence
-Telegram Checkout: Direct order fulfillment through Telegram integration
-Admin Interface: Add/edit/delete products and upload images to Supabase
-PWA Support: Progressive Web App capabilities for mobile installation
-Responsive Design: Mobile-first design with Tailwind CSS
-Technology Stack
-Layer	Technology	Purpose
-Frontend Framework	React 18 + TypeScript	Component-based UI with type safety
-Build Tool	Vite	Fast development and optimized production builds
-Styling	Tailwind CSS	Utility-first styling framework
-Animations	Framer Motion	Declarative animations and transitions
-Internationalization	i18next + react-i18next	Bilingual support (Amharic/English)
-Routing	React Router	Client-side routing between pages
-State Management	Custom React Hooks	useProducts and useCart for application state
-Data Persistence	localStorage	Cart state persistence across sessions
-Image Storage	Supabase Storage	Product image hosting in product-images bucket
-Notifications	Sonner	Toast notifications for user feedback
-Icons	Lucide React	Consistent icon library
-Deployment	Vercel	Static site hosting with CDN
-Getting Started
-Prerequisites
-Node.js (v18 or higher)
-npm, yarn, or bun (recommended: bun as specified in package.json) package.json:16
-Installation
-Clone the repository
-Install dependencies:
+# Install dependencies
 bun install
-Start the development server:
-bun run dev
-Open your browser and navigate to http://localhost:3000
-Available Scripts
-dev - Start development server on port 3000 package.json:7
-build - Build for production package.json:8
-typecheck - Run TypeScript type checking package.json:9
-lint - Run ESLint package.json:10
-preview - Preview production build package.json:11
-Project Structure
-/  
-├── src/  
-│   ├── components/          # Reusable UI components  
-│   │   ├── Hero.tsx        # Landing hero section  
-│   │   ├── ProductGrid.tsx # Product listing grid  
-│   │   ├── CartSidebar.tsx # Shopping cart sidebar  
-│   │   └── ...  
-│   ├── pages/              # Page-level components  
-│   │   ├── Home.tsx        # Home page  
-│   │   ├── About.tsx       # About page  
-│   │   ├── ProductDetails.tsx # Product details page  
-│   │   └── Admin.tsx       # Admin interface  
-│   ├── hooks/              # Custom React hooks  
-│   │   ├── useProducts.ts  # Product state management  
-│   │   └── useCart.ts      # Cart state management  
-│   ├── locales/            # Translation files  
-│   │   ├── en.json         # English translations  
-│   │   └── am.json         # Amharic translations  
-│   └── lib/                # Utilities and configuration  
-│       └── i18n.ts         # i18next configuration  
-├── public/                 # Static assets  
-└── index.html             # HTML entry point with SEO metadata  
-Key Architectural Decisions
-Telegram-Based Checkout
-Unlike traditional e-commerce platforms, Aynawaj uses Telegram as the checkout mechanism. The CartSidebar component constructs a formatted order message and opens Telegram via window.open() for direct communication with sellers. CartSidebar.tsx:29-48
-
-Bilingual First-Class Support
-The application treats Amharic and English as equal-priority languages, with Amharic set as the fallback language indicating the primary Ethiopian audience focus. am.json:1-5
-
-Direct-to-Consumer Model
-The architecture reflects a direct relationship between seller and buyer, eliminating payment gateway integration in favor of Telegram-based communication and manual fulfillment.
-
-Deployment
-The application is deployed on Vercel at aynawaj.vercel.app with comprehensive SEO metadata and PWA capabilities configured in index.html. index.html:26-31
-
-Contributing
-Fork the repository
-Create a feature branch
-Make your changes
-Run tests and type checking
-Submit a pull request
-License
-© {{year}} AYNAWAJ SHOES. All rights reserved. en.json:76
+2. DevelopmentBashbun run dev
+Navigate to http://localhost:3000 to see the magic happen.3. Production BuildBashbun run build
+# Preview the build locally
+bun run preview
+🏗️ Project ArchitectureThe project follows a clean, modular structure designed for scalability:/src/components: Atomic UI pieces like the ProductGrid and CartSidebar./src/hooks: Dedicated logic for state persistence and data fetching./src/locales: The heart of our bilingual support (am.json & en.json)./src/lib: Third-party configurations (i18n, Supabase client).Note on Checkout Logic: > We utilize a "Direct-to-Consumer" model. When a user checks out, the CartSidebar generates a pre-filled message and triggers window.open(), handing the transaction over to Telegram's secure and familiar environment.🤝 ContributingWe welcome contributions to make Aynawaj even better!Fork the project.Create your Feature Branch (git checkout -b feature/AmazingFeature).Commit your changes (git commit -m 'Add some AmazingFeature').Push to the branch (git push origin feature/AmazingFeature).Open a Pull Request.📜 License© 2026 AYNAWAJ SHOES. All rights reserved. Built with ❤️ for the Ethiopian community.
