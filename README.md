@@ -1,5 +1,23 @@
-👟 Aynawaj Shoes (አይናዋጅ ጫማዎች)Aynawaj Shoes is a premium, bilingual e-commerce experience tailored specifically for the Ethiopian footwear market. By bridging the gap between modern web browsing and local commerce habits, Aynawaj offers a seamless journey from discovery to a personalized Telegram-based checkout.Explore the Live Store✨ Key Features🇪🇹 Bilingual by Design – Full native support for Amharic and English, ensuring accessibility for all users with persistent language detection.📱 Mobile-First PWA – Optimized for mobile networks in Ethiopia; installable as a Progressive Web App for a native-like experience.✈️ Telegram Checkout – Skip the complex payment forms. Orders are formatted and sent directly to the seller via Telegram for manual fulfillment.⚡ High-Performance Catalog – Instant brand filtering, size availability checks, and smooth animations powered by Framer Motion.🛠️ Robust Admin Suite – Integrated Supabase storage for effortless product management and image uploads.🛠️ The Tech StackLayerTechnologyFrontendReact 18 + TypeScriptStylingTailwind CSS + Framer MotionStateCustom Hooks (useProducts, useCart)StorageSupabase (Images) + LocalStorage (Cart)I18ni18next (Amharic/English)DeploymentVercel🚀 Getting StartedAynawaj is optimized for Bun, providing lightning-fast installation and build times.1. InstallationBash# Clone the repository
-git clone https://github.com/your-username/aynawaj-shoes.git
+👟 Aynawaj Shoes (አይናዋጅ ጫማዎች)Aynawaj Shoes is a premium, bilingual e-commerce experience tailored specifically for the Ethiopian footwear market. By bridging the gap between modern web browsing and local commerce habits, Aynawaj offers a seamless journey from discovery to a personalized Telegram-based checkout.
+
+✨ Key Features
+
+   🇪🇹 Bilingual by Design – Full native support for Amharic and English, ensuring accessibility for all users with persistent language detection.
+  
+  📱 Mobile-First PWA – Optimized for mobile networks in Ethiopia; installable as a Progressive Web App for a native-like experience.
+  
+  ✈️ Telegram Checkout – Skip the complex payment forms. Orders are formatted and sent directly to the seller via Telegram for manual fulfillment.
+  
+  ⚡ High-Performance Catalog – Instant brand filtering, size availability checks, and smooth animations powered by Framer Motion.🛠️ Robust Admin Suite –              Integrated Supabase storage for effortless product management and image uploads.
+
+🛠️ The Tech Stack
+Layer                        	Technology
+Frontend	                    React 18 + TypeScript
+Styling	                      Tailwind CSS + Framer Motion
+State	                        Custom Hooks (useProducts, useCart)
+Storage	                      Supabase (Images) + LocalStorage (Cart)
+I18n	                        i18next (Amharic/English)
+Deployment	                  Vercel
 
 # Install dependencies
 bun install
